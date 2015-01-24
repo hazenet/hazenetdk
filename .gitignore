@@ -10,8 +10,4 @@ Gemfile.lock
 _site/
 _drafts/
 .sass-cache/
-<<<<<<< HEAD
-
-=======
->>>>>>> FETCH_HEAD
 .htaccess
