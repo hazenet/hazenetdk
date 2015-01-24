@@ -1,0 +1,14 @@
+---
+layout: page
+title: Archive
+navbar: archive
+permalink: /archive/
+exclude_from_search: true
+---
+
+{% include setup %}
+
+{% assign posts_collate = site.posts %}
+<div class="archive_page">
+  {% include posts_collate %}
+</div>

@@ -1,0 +1,11 @@
+<div class="navleft">
+   <a href="/">Home</a>  
+   <a href="/awards/" {% if page.navbar == 'awards' %}class="active"{% endif %}>Awards</a>  
+   <a href="/certifications/" {% if page.navbar == 'certifications' %}class="active"{% endif %}>Certifications</a>  
+   <a href="/about/" {% if page.navbar == 'about' %}class="active"{% endif %}>About</a>
+</div>
+<div class="navright">
+   <a href="/archive/" {% if page.navbar == 'archive' %}class="active"{% endif %}>Archive</a>
+   <a href="/tags/" {% if page.navbar == 'tags' %}class="active"{% endif %}>Tags</a>  
+   <a href="/search/" {% if page.navbar == 'search' %}class="active last"{% else %}class="last"{% endif %}>Search</a>
+</div>

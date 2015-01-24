@@ -1,0 +1,26 @@
+---
+layout: page
+title: Tags
+navbar: tags
+permalink: /tags/
+exclude_from_search: true
+---
+
+{% include setup %}
+
+<ul class="tags_list">
+  {% assign tags_list = site.tags | sort %}
+  {% include tags_list %}
+</ul>
+
+{% assign tags_list = site.tags | sort %}
+{% for tag in tags_list %}
+  <div class="tags_list_posts">
+    <h3 id="{{ tag[0] }}">{{ tag[0] }}:</h3>
+    <ul>
+      {% assign pages_list = tag[1] %}  
+      {% include pages_list %}
+    </ul>
+  </div>
+{% endfor %}
+{% assign tags_list = nil %}

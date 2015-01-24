@@ -1,0 +1,628 @@
+---
+---
+
+/*********************************************/
+/*                                           */
+/*                   IMPORTS                 */
+/*                                           */
+/*                   GENERAL                 */
+/*                                           */
+/*********************************************/
+
+@import "_reset";
+@import "_variables";
+
+/*********************************************/
+/*                                           */
+/*                 BASE RULES                */
+/*                                           */
+/*********************************************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: $white;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
+  overflow-y: scroll;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
+  // font-weight: bold;
+  font-weight: 500;
+  
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+  
+h1 {  
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {  
+  font-size: 24px;
+  a {
+    color: inherit;
+  }
+}
+
+h3 {  
+  font-size: 20px;
+}
+
+h4 {  
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+table {
+  border: 1px solid $mediumGray;
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  
+  tr {
+	th{
+	  background: $lightGray;
+      font-weight: bold;
+	  padding: 10px 24px;
+	}
+	
+    td {
+	  border-top: 1px solid $mediumGray;
+      padding: 10px 24px;
+    }
+	  
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    img {
+      border-radius: 3px;
+	  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
+      -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
+      -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
+
+	  /*
+	  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.50));
+      filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='0' dy='0' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#0')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#0')";
+    */
+    }
+
+    .image-caption {
+        color: $lightGray;
+        margin-top: 10px;
+    }
+    
+    div a.read-more {
+    /*text-transform: uppercase;*/
+    text-align: left;
+    font-size: 18px;
+  } 
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*                .masthead                  */
+/*                                           */
+/*********************************************/
+
+.wrapper-masthead {
+  margin-bottom: -35px;
+  
+  @include mobile {
+    margin-bottom: -25px;
+  }
+}
+
+.masthead {
+  padding: 20px 0;
+  
+  @include mobile {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.site-info {
+  // float: left;
+  // width: 100%;
+  
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  font-family: $helveticaNeue; 
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+  
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*                 Nav bar                   */
+/*                                           */
+/*********************************************/
+
+nav {
+  width: 720px;
+  margin-top: 20px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue; 
+  font-size: 18px;
+  border-top: 1px solid $lightGray;
+  border-bottom: 1px solid $lightGray;  
+  padding: 12px 0;
+  
+  @include mobile {
+	width: auto;
+    margin-top: 9px;
+    // display: block;
+    font-size: 16px;
+  }
+  
+  div {
+	display: inline;
+	
+	a {
+	  color: $darkGray;
+      text-align: left;
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      @include mobile {
+        color: $blue;
+      }      	
+    }
+  }
+  
+  div a.active {
+	color: $blue;
+  }
+  
+  div.navleft {
+	float: left;
+	
+	@include mobile {
+	  float: none;
+	}
+	
+	a {
+      margin-right: 20px;
+      
+      @include mobile {
+	    float: none;	      
+        margin-left: 0px;
+        margin-right: 10px;              
+      }
+    }
+  }
+    
+  div.navright {
+	float: right;
+
+    @include mobile {
+	  float: none;
+	}
+	
+	a {
+      margin-left: 20px;
+      
+      @include mobile {
+        margin-left: 0px;
+        margin-right: 10px;
+      }
+      
+      last {
+      margin-left: 20px;
+      
+        @include mobile {
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*                  .main                    */
+/*                                           */
+/*********************************************/
+
+.posts > .post {
+  padding-bottom: 26px;
+  border-bottom: 1px solid $lightGray;
+}
+
+
+.posts > .post:last-child {
+  @include mobile {
+    border-bottom: none;
+  }  
+}
+
+
+.post { 
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    /*text-transform: uppercase;*/
+    font-size: 18px;
+  } 
+}
+
+.post-date {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: $mediumGray;
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.entry-date {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: $mediumGray;
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*              Twitter Share                */
+/*                                           */
+/*********************************************/
+
+div.twitter-share {
+  display: block;
+  margin-top: -2px;
+  margin-bottom: 15px;
+  color: $mediumGray;
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+  
+  svg {
+	  width: 25px;
+	  height: 25px;
+	  vertical-align: middle;
+  }
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*              Post End Tags                */
+/*                                           */
+/*********************************************/
+
+div.post-end-tags {
+  display: block;
+  margin-top: -2px;
+  margin-bottom: 15px;
+  color: $mediumGray;
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*               Pagination                  */
+/*            from Lanyon Theme              */
+/*     https://github.com/poole/lanyon       */
+/*                                           */
+/*********************************************/
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin: 30px 0;
+  font-family: $ptsans;
+  color: $mediumGray;
+  text-align: center;
+  
+  @include mobile {
+	margin-top: 15px;
+	margin-left: -13px;
+    margin-right: -13px;
+  }
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 13px;
+  border: 1px solid $lightGray;
+  float: left;
+  width: 50%;
+  
+  @include mobile {
+    float: none;
+    width: 100%; 
+  }
+}  
+.pagination-item:first-child {
+  margin-bottom: 0;
+  border-top-left-radius:    4px;
+  border-bottom-left-radius: 4px;
+  margin-bottom: -1px;
+  
+  @include mobile {
+    margin-bottom: -1px;  
+    border-top-left-radius:    0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+.pagination-item:last-child {
+  margin-left: -1px;
+  border-top-right-radius:    4px;
+  border-bottom-right-radius: 4px;
+  
+  @include mobile {
+    margin-left: 0px;
+    border-top-right-radius:    0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: $lightGray;
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*                  Footer                   */
+/*                                           */
+/*********************************************/
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*               Archive page                */
+/*                                           */
+/*********************************************/
+
+div.archive_page {
+	
+	h2 {
+	  margin-top: 15px;		
+	  margin-bottom: 0px;
+	}
+	
+	h3 {
+	  margin-top: 5px;
+	  margin-bottom: 10px;
+	  margin-left: 10px;
+	}
+	
+	ul {
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+  	  margin-left: 10px;
+  	  
+  	  li {
+	    font-size: 100%;
+  	  }
+	}
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*                Tags page                  */
+/*                                           */
+/*********************************************/
+
+ul.tags_list {
+	  margin-top: 15px;
+      margin-bottom: 15px;
+}
+
+div.tags_list_posts {
+	
+	h3 {
+      margin-top: 5px;
+	  margin-bottom: 10px;		
+	}
+	
+	ul {
+      margin-top: 5px;
+	  margin-bottom: 5px;
+	  
+	  li {
+	    font-size: 100%;
+  	  }
+	}
+
+}
+
+/*********************************************/
+/*                                           */
+/*             LAYOUT / SECTION              */
+/*                                           */
+/*               Search page                 */
+/*                                           */
+/*********************************************/
+
+input#search-query {
+  width: 300px;
+  font-size: 20px;
+}
+
+/*********************************************/
+/*                                           */
+/*                 IMPORTS                   */
+/*                                           */
+/*                SVG Icons                  */
+/*                                           */
+/*********************************************/
+
+@import "_svg-icons";
+
+/*********************************************/
+/*                                           */
+/*                 IMPORTS                   */
+/*                                           */
+/*                HIGHLIGHTS                 */
+/*                                           */
+/*********************************************/
+
+@import "_highlights";
