@@ -16,7 +16,7 @@ I would like to thank, a former colleague of mine, Alan Gordon, who is Chief Tec
 
 First off, open 'Disk Utility', located at '/Applications/Utilities/', and select the volume called 'ServerHD' from the list of disks, as shown in the screenshot below.
 
-{% include image.html img="/assets/2013/07/26-disk-utility-unmount.png" alt-title="26-Disk-Utility-Unmount.png" %}
+{% include image.html img="/assets/2013/07/17/26-disk-utility-unmount.png" alt-title="26-Disk-Utility-Unmount.png" %}
 
 Now click the button named 'Unmount' in the top of the window.
 
@@ -24,7 +24,7 @@ The text 'ServerHD' in the list of disks, should now be dimmed slightly.
 
 While the volume 'ServerHD' is still selected, click the button named 'Info' in the top of the window. This will bring up a information window, containing detailed information about the volume 'ServerHD'.
 
-{% include image.html img="/assets/2013/07/27-disk-utility-info.png" alt-title="27-Disk-Utility-Info.png" %}
+{% include image.html img="/assets/2013/07/17/27-disk-utility-info.png" alt-title="27-Disk-Utility-Info.png" %}
 
 In this case we are interested in the information called 'Disk Identifier'. In my case this is 'disk2s2&#8242;, note down the disk number, in my case 'disk2&#8242;.
 

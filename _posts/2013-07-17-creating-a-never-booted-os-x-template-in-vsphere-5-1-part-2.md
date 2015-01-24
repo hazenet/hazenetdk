@@ -28,15 +28,15 @@ When prompted, enter your administrator password and hit Enter.
 
 The result should be a Command Line Menu Interface, looking like this:
 
-{% include image.html img="/assets/2013/07/02-sic-main-menu.png" alt-title="02-SIC-Main-Menu.png" %}
+{% include image.html img="/assets/2013/07/17/02-sic-main-menu.png" alt-title="02-SIC-Main-Menu.png" %}
 
 Start by selecting '3) Preferences', to access the SIC BASH script Preferences, to setup the default behaviors of the SIC BASH script.
 
-{% include image.html img="/assets/2013/07/03-sic-preferences.png" alt-title="03-SIC-Preferences.png" %}
+{% include image.html img="/assets/2013/07/17/03-sic-preferences.png" alt-title="03-SIC-Preferences.png" %}
 
 Select '2) Default Folders, where you can setup the locations the SIC BASH script stores its 'Configurations', 'Library', 'Packages' and 'Masters'.
 
-{% include image.html img="/assets/2013/07/04-sic-default-folders.png" alt-title="04-SIC-Default-Folders.png" %}
+{% include image.html img="/assets/2013/07/17/04-sic-default-folders.png" alt-title="04-SIC-Default-Folders.png" %}
 
 *   'Configurations' is a set of configurations which can by applied to a Image which then gets exported as a Master
 *   'Library' is where your default created OS X installed DMG files are stored. These are unconfigured, and can be used with multiple 'Configurations' and then be exported as Masters.
@@ -51,7 +51,7 @@ If you change any of the locations, when you exit the 'Default Folders', by choo
 
 Back at the 'Preferences Menu' screen, select '3 Image Settings'.
 
-{% include image.html img="/assets/2013/07/05-sic-image-settings.png" alt-title="05-SIC-Image-Settings.png" %}
+{% include image.html img="/assets/2013/07/17/05-sic-image-settings.png" alt-title="05-SIC-Image-Settings.png" %}
 
 Set the 'Image Size', and the 'Volume Name' you want to use.
 
@@ -61,7 +61,7 @@ Exit the 'Image Settings' by selecting '1) Preferences Menu'. Remember to save y
 
 Back at the 'Preferences Menu' select '4) Export Settings'
 
-{% include image.html img="/assets/2013/07/06-sic-export-settings.png" alt-title="06-SIC-Export-Settings.png" %}
+{% include image.html img="/assets/2013/07/17/06-sic-export-settings.png" alt-title="06-SIC-Export-Settings.png" %}
 
 Here I have chosen to 'Remove Recovery Partition from Master', to save space on the Storage array in VMware vSphere. And also because if you need to do maintenance on a VMDK containing OS X, it just a easy to add that VMDK to a secondary VM running OS X, and do your maintenance there.
 
@@ -83,19 +83,19 @@ In here is a file called InstallESD.dmg, double-click on it to mount it.
 
 Back in SIC in the Terminal window, choose '4) Create Image'
 
-{% include image.html img="/assets/2013/07/07-sic-create-image.png" alt-title="07-SIC-Create-Image.png" %}
+{% include image.html img="/assets/2013/07/17/07-sic-create-image.png" alt-title="07-SIC-Create-Image.png" %}
 
 Now choose '2) Select Source', where you should have the option to select the mounted volume, of the 'InstallESD.dmg' file.
 
 I my case called '1) Mac OS X 10.8.4 (12E55) Installer'.
 
-{% include image.html img="/assets/2013/07/08-sic-select-source.png" alt-title="08-SIC-Select-Source.png" %}
+{% include image.html img="/assets/2013/07/17/08-sic-select-source.png" alt-title="08-SIC-Select-Source.png" %}
 
 Back at the 'Create Image' menu, you will now see that a source has been selected.
 
 When we start the image creation process, the DMG file will be named as illustrated in the screenshot below, and will be placed in the 'Library' folder previously selected in the 'Default Folders' menu.
 
-{% include image.html img="/assets/2013/07/09-sic-source-selected.png" alt-title="09-SIC-Source-Selected.png" %}
+{% include image.html img="/assets/2013/07/17/09-sic-source-selected.png" alt-title="09-SIC-Source-Selected.png" %}
 
 Now select '3) Create Image'.
 

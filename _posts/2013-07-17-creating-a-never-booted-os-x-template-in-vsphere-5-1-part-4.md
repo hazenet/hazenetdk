@@ -30,11 +30,11 @@ The other good thing about a Sparseimage image file, instead of a DMG image file
 
 Start be launching the Disk Utility application located in '/Applications/Utilities/', and then from the 'File' menu select 'New -> Blank Disk Image…', which will open up the 'New Blank Image' dialog.
 
-{% include image.html img="/assets/2013/07/18-disk-utility-new-blank-image.png" alt-title="18-Disk-Utility-New-Blank-Image.png" %}
+{% include image.html img="/assets/2013/07/17/18-disk-utility-new-blank-image.png" alt-title="18-Disk-Utility-New-Blank-Image.png" %}
 
 Fill out the fields as below.
 
-{% include image.html img="/assets/2013/07/19-disk-utility-new-blank-image-filled-out.png" alt-title="19-Disk-Utility-New-Blank-Image-Filled-Out.png" %}
+{% include image.html img="/assets/2013/07/17/19-disk-utility-new-blank-image-filled-out.png" alt-title="19-Disk-Utility-New-Blank-Image-Filled-Out.png" %}
 
 Of cause you can choose your own values.
 
@@ -48,19 +48,19 @@ Of cause you can choose your own values.
 
 The generated Sparseimage file will be added to the list of disks on the left side of the 'Disk Utility' window and will be mounted automatically.
 
-{% include image.html img="/assets/2013/07/20-disk-utility-sparseimage-created.png" alt-title="20-Disk-Utility-Sparseimage-Created.png" %}
+{% include image.html img="/assets/2013/07/17/20-disk-utility-sparseimage-created.png" alt-title="20-Disk-Utility-Sparseimage-Created.png" %}
 
 Now in the Finder navigate to the 'Masters' folder of SIC, the default location is '/Users/Shared/SIC/Masters/'.
 
 Drag and drop the 'mountainlion_12e55_user.i386.hfs.dmg' into the list of disks on the left side of the 'Disk Utility' window.
 
-{% include image.html img="/assets/2013/07/21-disk-utility-drag-and-drop.png" alt-title="21-Disk-Utility-Drag-and-Drop.png" %}
+{% include image.html img="/assets/2013/07/17/21-disk-utility-drag-and-drop.png" alt-title="21-Disk-Utility-Drag-and-Drop.png" %}
 
 Select the 'mountainlion_12e55_user.i386.hfs.dmg' image in the list of disks in the left side of the 'Disk Utility' window, and choose 'Restore' pane in the top part of the window.
 
 Now drag and drop the mounted 'ServerHD' volume (the indented volume in the list) from the list of disks into the 'Destination' field of the 'Restore' pane.
 
-{% include image.html img="/assets/2013/07/22-disk-utility-restore-pane.png" alt-title="22-Disk-Utility-Restore-Pane.png" %}
+{% include image.html img="/assets/2013/07/17/22-disk-utility-restore-pane.png" alt-title="22-Disk-Utility-Restore-Pane.png" %}
 
 Now click the 'Restore' button in the lower right corner of the 'Disk Utility' window.
 

@@ -74,7 +74,7 @@ In here is a file called InstallESD.dmg.
 
 This 'InstallESD.dmg' file is a "Virtual DVD" for installing Mountain Lion onto either a physical or virtual Mac.
 
-{% include image.html img="/assets/2013/07/01-finder-installesd.png" alt-title="01-Finder-InstallESD.png" %}
+{% include image.html img="/assets/2013/07/17/01-finder-installesd.png" alt-title="01-Finder-InstallESD.png" %}
 
 ### This series of blog posts consists of the following:
 

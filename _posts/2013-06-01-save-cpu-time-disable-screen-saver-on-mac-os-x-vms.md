@@ -18,7 +18,7 @@ To demonstrate I have deployed two identical virtual Mac OS X machines, running 
 
 Below is a screen shot from vCenter, showing the difference in CPU utilization on the 2 VMs.
 
-{% include image.html img="/assets/2013/06/screen-saver-cpu.png" alt-title="Screen-Saver-CPU.png" %}
+{% include image.html img="/assets/2013/06/01/screen-saver-cpu.png" alt-title="Screen-Saver-CPU.png" %}
 
 With the Screen Saver enabled it is using 2010 MHz, but with the Screen Saver disabled it is only using 27 Mhz.
 
@@ -26,7 +26,7 @@ With the Screen Saver enabled it is using 2010 MHz, but with the Screen Saver di
 
 [Frank Brix Pedersen](https://twitter.com/frankbrix){:target="_blank"} (author of [vfrank.org](http://www.vfrank.org){:target="_blank"}) asked for a screenshot from esxtop. So after a &#8216;1-tweet&#8217; crash-course in esxtop (by the way, thanks Frank), I made the below screenshot.
 
-{% include image.html img="/assets/2013/06/screen-saver-esxtop.png" alt-title="Screen-Saver-esxtop.jpg" %}
+{% include image.html img="/assets/2013/06/01/screen-saver-esxtop.png" alt-title="Screen-Saver-esxtop.jpg" %}
 
 This time the readings from vCenter was, 1967 Mhz with Screen Saver enabled and 26 MHz with Screen Saver disabled.
 

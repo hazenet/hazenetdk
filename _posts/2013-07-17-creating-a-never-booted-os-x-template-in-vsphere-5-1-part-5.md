@@ -18,7 +18,7 @@ Under the 'Manage' tab, select the 'Settings' sub-tab.
 
 In list on the left, select 'Security Profile', and scroll down to the section named 'Services' and click 'Edit'<!--break-->.
 
-{% include image.html img="/assets/2013/07/23-vcenter-edit-host-services.png" alt-title="23-vCenter-Edit-Host-Services.png" %}
+{% include image.html img="/assets/2013/07/17/23-vcenter-edit-host-services.png" alt-title="23-vCenter-Edit-Host-Services.png" %}
 
 In this window, select the 'SSH' and unfold the 'Service Details' section in the bottom of the window. In this section click the 'Start' buttom.
 
@@ -70,11 +70,11 @@ When you run the command, you will again be asked for the root password of the E
 
 After the copy has finished, double click on the 'darwin.iso' file on the Desktop.
 
-{% include image.html img="/assets/2013/07/24-vmware-fusion-install-vmware-tools.png" alt-title="24-VMware-Fusion-Install-VMware-Tools.png" %}
+{% include image.html img="/assets/2013/07/17/24-vmware-fusion-install-vmware-tools.png" alt-title="24-VMware-Fusion-Install-VMware-Tools.png" %}
 
 Right click (CTRL+Click) on 'Install VMware Tools' and choose 'Show Package Contents'. In the new Finder window, navigate into the following folders 'Contents -&gt; Resources', and there should be a file called 'VMware Tools.pkg'.
 
-{% include image.html img="/assets/2013/07/25-vmware-fusion-vmware-tools-pkg.png" alt-title="25-VMware-Fusion-VMware-Tools-PKG.png" %}
+{% include image.html img="/assets/2013/07/17/25-vmware-fusion-vmware-tools-pkg.png" alt-title="25-VMware-Fusion-VMware-Tools-PKG.png" %}
 
 Make a copy of the 'VMware Tools.pkg' file to the Desktop, be holding ALT down while dragging the 'VMware Tools.pkg' file to the Desktop. (There should be a small green '+' sign on it, before you drop it).
 

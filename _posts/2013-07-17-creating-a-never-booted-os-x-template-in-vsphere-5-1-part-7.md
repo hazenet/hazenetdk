@@ -32,7 +32,7 @@ Power on the machine, a single time, to initialize the hardware.
 
 In the Console you should see something similarly to the image below.
 
-{% include image.html img="/assets/2013/07/28-vcenter-console.png" alt-title="28-vCenter-Console.png" %}
+{% include image.html img="/assets/2013/07/17/28-vcenter-console.png" alt-title="28-vCenter-Console.png" %}
 
 After that, cut the power to the VM, by choosing 'Actions -> All vCenter Actions -> Power -> Power off'.
 
