@@ -8,7 +8,7 @@ tags:
 - Jekyll
 - WordPress
 ---
-I have switch my blog from using [WordPress](https://wordpress.org){:target="_blank"} to using [Jekyll](http://jekyllrb.com){:target="_blank"} instead. Jekyll is a site generator, that builds a static website from "templates" and plain text files (usually [Markdown](http://daringfireball.net/projects/markdown/){:target="_blank"} files).
+I have switch my blog from using [WordPress](https://wordpress.org){:target="_blank"} to using [Jekyll](http://jekyllrb.com){:target="_blank"} instead. Jekyll is a site generator, that builds a static website from "templates" and plain text files (usually [Markdown](http://daringfireball.net/projects/markdown/){:target="_blank"} files)<!--break-->.
 
 ## Reasons for switching to Jekyll
 

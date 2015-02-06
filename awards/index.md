@@ -6,6 +6,8 @@ permalink: /awards/
 ---
 
 ## VMware:
+* VMware vExpert – 2015
+
 ![VMware vExpert 2014](/assets/awards/vexpert2014.png)
 
 * VMware vExpert – 2014
