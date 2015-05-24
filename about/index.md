@@ -4,7 +4,7 @@ title: About
 navbar: about
 permalink: /about/
 ---
-My name is Mads Fog Albrechtslund, and I work as a Senior Consultant, with the focus on Virtualization, for a company called [Businessmann A/S](http://www.businessmann.dk/).
+My name is Mads Fog Albrechtslund, and I work as a Cloud Architect, with the focus on Virtualization, for a company called [Proact Systems A/S](http://www.proact.dk/).
 
 My primary work areas are VMware vSphere, VMware vRealize Automation, VMware vRealize Orchestration and Veeam Backup & Replication.
 

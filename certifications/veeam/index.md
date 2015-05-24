@@ -6,14 +6,16 @@ permalink: /certifications/veeam/
 ---
 ![VMCE](/assets/certifications/veeam/vmce.png)
 
-* Veeam Certified Engineer - Backup & Replication (version 7)
+* Veeam Certified Engineer - Backup & Replication (version 7 and 8)
 
 ![Veeam Technical Sales Professional v7](/assets/certifications/veeam/vmtsp7.png)
 
+* Veeam Technical Sales Professional - Availability Suite (version 8)
 * Veeam Technical Sales Professional - Backup & Replication (version 7)
 * Veeam Technical Sales Professional - Management Pack for VMware (version 6)
 
 ![Veeam Sales Professional v7](/assets/certifications/veeam/vmsp7.png)
 
+* Veeam Sales Professional - Availability Suite (version 8)
 * Veeam Sales Professional - Backup & Replication (version 7)
 * Veeam Sales Professional - Management Pack for VMware (version 6.5)
