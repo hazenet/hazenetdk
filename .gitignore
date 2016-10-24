@@ -9,5 +9,7 @@ bin/
 Gemfile.lock
 _site/
 _drafts/
+_drafts-assets/
 .sass-cache/
+.jekyll-metadata
 .htaccess

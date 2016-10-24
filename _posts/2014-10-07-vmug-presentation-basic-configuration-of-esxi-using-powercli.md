@@ -1,7 +1,6 @@
 ---
 layout: post
 title: VMUG Presentation – Basic configuration of ESXi using PowerCLI
-exclude_from_search: true
 uuid: b9c00911-841c-44da-9a6a-31724df47741
 date: 2014-10-07T18:00:00+01:00
 tags:
@@ -14,9 +13,9 @@ Here is a quick post with the slides and the script I used in my VMUG Presentati
 
 As the presentation was in danish, so are the slides :-)<!--break-->
 
-Download a PDF version of the slides here: [Basis konfiguration af ESXi via PowerCLI](/assets/2015/10/07/Basis-konfiguration-af-ESXi-via-PowerCLI.pdf){:target="_blank"}
+Download a PDF version of the slides here: [Basis konfiguration af ESXi via PowerCLI](/assets/2014/10/07/Basis-konfiguration-af-ESXi-via-PowerCLI.pdf){:target="_blank"}
 
-Download the script here: [ESXi-Config-Script.ps1](/assets/2015/10/07/ESXi-Config-Script.ps1_.zip)
+Download the script here: [ESXi-Config-Script.ps1](/assets/2014/10/07/ESXi-Config-Script.ps1_.zip)
 
 {% highlight powershell %}
 <#

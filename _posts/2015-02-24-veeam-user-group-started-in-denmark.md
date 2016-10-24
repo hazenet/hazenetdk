@@ -14,7 +14,7 @@ Our plan is to hold 2, maybe 3, meetings per year. And we will try to "model" th
 
 ## First meeting
 
-The first meeting will be held on Friday the 13. of march 2015, at Arrow ECS' premises, Baltorpvej 158, 2750 Ballerup, Denmark, from 12.30 to 15.30.
+The first meeting will be held on Friday the 13. of March 2015, at Arrow ECS' premises, Baltorpvej 158, 2750 Ballerup, Denmark, from 12.30 to 15.30.
 
 The agenda and booking of tickets can be found here:
 [https://vugdk201503.eventbrite.com/](https://vugdk201503.eventbrite.com/){:target="_blank"}

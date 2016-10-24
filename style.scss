@@ -31,7 +31,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 940px;
   padding: 0 10px;
   width: 100%;
 }
@@ -150,6 +150,8 @@ img {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     
     img {
       border-radius: 3px;
@@ -263,7 +265,7 @@ img {
 /*********************************************/
 
 nav {
-  width: 720px;
+  width: 920px;
   margin-top: 20px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
   font-size: 18px;

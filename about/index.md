@@ -4,11 +4,24 @@ title: About
 navbar: about
 permalink: /about/
 ---
-My name is Mads Fog Albrechtslund, and I work as a Cloud Architect, with the focus on Virtualization, for a company called [Proact Systems A/S](http://www.proact.dk/).
 
-My primary work areas are VMware vSphere, VMware vRealize Automation, VMware vRealize Orchestration and Veeam Backup & Replication.
+My name is Mads Fog Albrechtslund, I live in [Hedensted](#physical-location) with my wife Britta and our daugther Freja.  
+
+I work as a [Cloud Architect for Proact Systems A/S](/about/experience/proact-systems/).
+
+My primary work areas are VMware vRealize Automation, VMware vRealize Orchestrator, VMware vSphere and Veeam Backup & Replication.
+
+Besides my daily work I also help out organizing two user groups, [Veeam User Group Denmark](http://www.veeamug.dk){:target="_blank"} and [VMware Automation User Group Denmark](http://vmaugdk.github.io){:target="_blank"}.
 
 {% include image.html img="/assets/about/mads.jpg" alt-title="Mads.jpg" %}
+
+## Curriculum Vitae
+
+- [Experience](/about/experience/)
+- [Education](/about/education/)
+- [Courses](/about/courses/)
+- [Conferences](/about/conferences/)
+- [Speaker](/about/speaker/)
 
 ## Physical Location
 I live in a small town called, Hedensted, in the eastern part of Jutland, which is the mainland of Denmark.  
