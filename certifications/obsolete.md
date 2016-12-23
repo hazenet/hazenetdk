@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Other
+title: Obsolete certifications
 navbar: certifications
 permalink: /certifications/obsolete/
 ---

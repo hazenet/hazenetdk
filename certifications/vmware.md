@@ -10,7 +10,7 @@ permalink: /certifications/vmware/
 
 ![VCAP-DCA](/assets/certifications/vmware/vcap-dca.jpg)
 
-* VMware Certified Advanced Professional 5 - Data Center Virtualization (VCAP5-DCV) — September 2014
+* VMware Certified Advanced Professional 5 - Data Center Virtualization (VCAP5-DCA) — September 2014
 
 ![VCP5-DCV](/assets/certifications/vmware/vcp5-dcv.jpg)
 

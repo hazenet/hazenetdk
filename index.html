@@ -14,6 +14,16 @@ layout: default
       
       <div class="entry-date">
         Posted on {{ post.date | date: "%B %e, %Y" }} by {{ site.author }}
+        <div class="entry-tags">
+        	Tags:
+        	{% for tag in post.tags %}
+        		{% if forloop.first == true %}
+        			<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+    			{% else %}
+       				 - <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+    			{% endif %}
+        	{% endfor %}
+        </div>
       </div>
 
     </div>
