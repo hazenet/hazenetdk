@@ -1,0 +1,39 @@
+{% assign prefix = "New blogpost: " %}
+{% assign twitterLimit = 116 %}
+
+{% assign hashtags = "" %}
+  
+{% if include.post.twitterhashtags != empty %}
+{% assign hashtags = " " %}
+	{% for hashtag in include.post.twitterhashtags %}
+  	{% if forloop.last == true %}
+  		{% assign hashtags = hashtags | append: "#" | append: hashtag %}
+  	{% else %}
+  		{% assign hashtags = hashtags | append: "#" | append: hashtag | append: " " %}
+  	{% endif %}
+  {% endfor %}
+{% endif %}
+  
+{% assign tweetContent = prefix | append: '"' | append: include.post.title | append: '"' | append: hashtags %}
+  
+{% if tweetContent.size > twitterLimit %}
+	{% assign titleWordArray = include.post.title | split: " " %}
+  	{% assign previousTest = prefix | append: '"' | append: titleWordArray[0] | append: '..."' | append: hashtags %}
+  	{% assign testTitle = "" %}
+  	{% for titleWord in titleWordArray %}
+  		{% if forloop.first == true %}
+  			{% assign testTitle = titleWord %}
+  		{% else %}	
+  			{% assign testTitle = testTitle | append: " " | append: titleWord %}
+  		{% endif %}
+  		{% assign nextTest = prefix | append: '"' | append: testTitle | append: '..."' | append: hashtags %}
+  		{% if nextTest.size > twitterLimit %}
+  			{% assign tweetContent = previousTest %}
+  			{% break %}
+  		{% else %}
+  			{% assign previousTest = nextTest %}
+  		{% endif %}
+  	{% endfor %}
+{% endif %}
+
+{{ tweetContent | strip }}

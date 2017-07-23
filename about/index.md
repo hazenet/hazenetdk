@@ -5,7 +5,7 @@ navbar: about
 permalink: /about/
 ---
 
-My name is Mads Fog Albrechtslund, I live in [Hedensted](#physical-location) with my wife Britta and our daugther Freja.  
+My name is Mads Fog Albrechtslund, I live in [Hedensted](#physical-location) with my wife Britta and our two children Freja and Lau.  
 
 I work as a [Cloud Architect for Proact Systems A/S](/about/experience/proact-systems/).
 

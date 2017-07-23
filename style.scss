@@ -36,6 +36,49 @@ body {
   width: 100%;
 }
 
+.maincontent {
+  position: relative;
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  min-height: 480px;
+  
+  @include mobile {
+    min-height: auto;
+  }
+}
+
+.sponsors {
+  position: absolute;
+  right: -310px;
+  top: 0;
+  width: 310px;
+  padding-left: 10px;
+  
+  @include mobile {
+    position: relative;
+    right: auto;
+    margin: auto;
+    width: 300px;
+    padding-left: 0px;
+  }
+}
+
+.sponsor1 {
+  margin-bottom: 5px;
+  
+  @include mobile {
+  }
+}
+
+.sponsor2 {
+  margin-bottom: 5px;
+  
+  @include mobile {
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -148,10 +191,8 @@ img {
 
 .image-wrapper {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto;
+    max-width: 700px;
     
     img {
       border-radius: 3px;
@@ -168,7 +209,7 @@ img {
     }
 
     .image-caption {
-        color: $lightGray;
+        color: $mediumGray;
         margin-top: 10px;
     }
     

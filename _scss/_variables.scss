@@ -23,7 +23,7 @@ $ptsans: "PT Sans", Helvetica, Arial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 940px) {
     @content;
   }
 }

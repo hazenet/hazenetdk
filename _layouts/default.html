@@ -9,7 +9,45 @@
 
     <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{{ site.description }}">
+	
+	<!-- Open Graph Metadata fields -->
+	<meta content="{{ site.name }}" property="og:site_name">
+	
+	{% if page.title %}
+		<meta content="{{ page.title }}" property="og:title">
+		<meta content="article" property="og:type">
+	{% else %}
+		<meta content="{{ site.name }}" property="og:title">
+		<meta content="website" property="og:type">
+	{% endif %}
+	
+	{% if page.description %}
+		<meta content="{{ page.description }}" property="og:description">
+	{% else %}
+		<meta content="{{ site.description }}" property="og:description">
+	{% endif %}
 
+	{% if page.url %}
+		<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+	{% endif %}
+	
+	{% if page.date %}
+		<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+		<meta content="{{ site.author }}" property="article:author">
+	{% endif %}
+	
+	{% if page.image %}
+		<meta content="{{ site.url }}{{ page.image }}" property="og:image">
+	{% else %}
+		<meta content="{{ site.url }}{{ site.image }}" property="og:image">
+	{% endif %}
+	
+	{% if page.tags %}
+		{% for tag in page.tags %}
+			<meta content="{{ tag }}" property="article:tag">
+		{% endfor %}
+	{% endif %}
+	
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -39,8 +77,18 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="maincontent">
       {{ content }}
+      <div class="sponsors">
+	      <div class="sponsor1">
+		    <a id="sponsor_1_link" href="#">
+				<img ID="sponsor_1_image" src="#" border=0 width=300 height=250 alt="Advertisement">
+			</a>
+		  </div>
+		  <div class="sponsor2">
+		    <img src="/assets/sponsor.png" alt="" />
+		  </div>
+      </div>
     </div>
 
     <div class="wrapper-footer">
@@ -52,6 +100,7 @@
     </div>
 
     {% include analytics.html %}
-    <script type="text/javascript" src="/js/selection.js"></script>
+    <!-- <script type="text/javascript" src="/js/selection.js"></script> -->
+    <script type="text/javascript" src="/js/sponsor.js"></script>
   </body>
 </html>

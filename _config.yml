@@ -64,7 +64,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-lunr-js-search
